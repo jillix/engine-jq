@@ -1,0 +1,16 @@
+{
+  "name": "builder",
+  "version": "0.1.0",
+  "description": "The application builder for service app.",
+  "main": "server/index.js",
+  "components": {
+      "scripts": [
+        "client/index.js",
+        "/libs/jquery.js"
+      ]
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
