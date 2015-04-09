@@ -2,7 +2,6 @@
   "name": "engine-jq",
   "version": "0.1.0",
   "description": "Call jQuery methods using Engine.",
-  "main": "client/index.js",
   "components": {
     "scripts": [
       "client/index.js",
