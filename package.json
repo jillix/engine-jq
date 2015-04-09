@@ -1,16 +1,30 @@
 {
-  "name": "builder",
+  "name": "engine-jq",
   "version": "0.1.0",
-  "description": "The application builder for service app.",
-  "main": "server/index.js",
+  "description": "Call jQuery methods using Engine.",
+  "main": "client/index.js",
   "components": {
-      "scripts": [
-        "client/index.js",
-        "/libs/jquery.js"
-      ]
+    "scripts": [
+      "client/index.js",
+      "/libs/jquery.js"
+    ]
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jillix/engine-jq.git"
+  },
+  "keywords": [
+    "jquery",
+    "jxengine"
+  ],
+  "author": "jillix <contact@jillix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jillix/engine-jq/issues"
+  },
+  "homepage": "https://github.com/jillix/engine-jq"
 }
