@@ -16,7 +16,7 @@ var $ = require("/libs/jquery");
  *
  * @return {undefined}
  */
-exports.jq = function (ev, data) {
+exports.jq = function (data) {
     data.args = data.args || [];
     $.fn[data.meth].apply($(data.sel), data.args);
 };
