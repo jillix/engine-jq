@@ -21,6 +21,16 @@ exports.jq = function (data) {
     $.fn[data.meth].apply($(data.sel), data.args);
 };
 
+/**
+ * text
+ *
+ * @name text
+ * @function
+ * @param {Object} data An object contaning:
+ *
+ *  - `sel` (String): The jQuery selector.
+ *  - `text` (String): The text to set.
+ */
 exports.text = function (data) {
     exports.jq({
         sel: data.sel
@@ -28,3 +38,6 @@ exports.text = function (data) {
       , meth: "text"
     });
 };
+
+// Export the jQuery function itself
+exports.$ = $;
