@@ -20,3 +20,11 @@ exports.jq = function (data) {
     data.args = data.args || [];
     $.fn[data.meth].apply($(data.sel), data.args);
 };
+
+exports.text = function (data) {
+    exports.jq({
+        sel: data.sel
+      , args: [data.text]
+      , meth: "text"
+    });
+};
