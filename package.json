@@ -2,11 +2,13 @@
   "name": "engine-jq",
   "version": "0.1.0",
   "description": "Call jQuery methods using Engine.",
-  "components": {
-    "scripts": [
-      "client/index.js",
-      "/libs/jquery.js"
-    ]
+  "composition": {
+    "client": {
+      "module": [
+        "client/index.js",
+        "/libs/jquery.js"
+      ]
+    }
   },
   "devDependencies": {},
   "scripts": {
